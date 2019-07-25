@@ -1,10 +1,13 @@
 {
   "name": "ruuvi-gateway-nodejs",
   "version": "1.0.0",
-  "description": "API-server for the Ruuvi tags using NodeJS, Mongoose, and MongoDB. The learning project for NodeJS.",
+  "description": "API-server for the Ruuvi tags using NodeJS, Mongoose, and MongoDB. The NodeJSlearning project.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --verbose",
+    "start": "node index.js",
+    "watch": "nodemon index.js",
+    "lint": "eslint ."
   },
   "repository": {
     "type": "git",
@@ -19,5 +22,16 @@
   "bugs": {
     "url": "https://github.com/pasiol/ruuvi-gateway-nodejs/issues"
   },
-  "homepage": "https://github.com/pasiol/ruuvi-gateway-nodejs#readme"
+  "homepage": "https://github.com/pasiol/ruuvi-gateway-nodejs#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.0.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.6.6"
+  },
+  "devDependencies": {
+    "eslint": "^6.1.0",
+    "jest": "^24.8.0",
+    "nodemon": "^1.19.1"
+  }
 }
