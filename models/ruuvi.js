@@ -8,8 +8,10 @@ const ruuviSchema = new mongoose.Schema({
       accelX: Number,
       accelY: Number,
       accelZ: Number,
+      dataformat: Number,
       defaultBackground: Number,
       favorite: Boolean,
+      gatewayUrl: String,
       humidity: Number,
       id: String,
       name: String,
@@ -17,10 +19,17 @@ const ruuviSchema = new mongoose.Schema({
       rawDataBlob: Array,
       rssi: Number,
       temperature: Number,
+      txPower: Number,
       updateAt: String,
       voltage: Number
     }
   ],
+  batterylevel: Number,
+  location: {
+    accuracy: Number,
+    latitude: Number,
+    longitude: Number
+  },
   time: String
 })
 
