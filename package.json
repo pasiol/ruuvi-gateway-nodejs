@@ -6,7 +6,7 @@
   "scripts": {
     "test": "jest --verbose",
     "start": "node index.js",
-    "watch": "nodemon index.js",
+    "watch": "nodemon index.js testmode",
     "lint": "eslint ."
   },
   "repository": {
