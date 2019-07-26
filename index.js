@@ -14,15 +14,9 @@ if (args[0] === 'testmode') {
 } else {
   try {
     var options = {
-      key: fs.readFileSync(
-        `/etc/letsencrypt/archive/${config.DOMAINNAME}/privkey1.pem`
-      ),
-      cert: fs.readFileSync(
-        `/etc/letsencrypt/archive/${config.DOMAINNAME}/fullchain1.pem`
-      ),
-      ca: fs.readFileSync(
-        `/etc/letsencrypt/archive/${config.DOMAINNAME}/chain1.pem`
-      )
+      key: fs.readFileSync(`${config.SSLPATH}/privkey.pem`),
+      cert: fs.readFileSync(`${config.SSLPATH}/fullchain.pem`),
+      ca: fs.readFileSync(`${config.SSLPATH}/chain.pem`)
     }
   } catch (error) {
     console.log('Not founded ssl-certificates: ', error.code, error.path)
