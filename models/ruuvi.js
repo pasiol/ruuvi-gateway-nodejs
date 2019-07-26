@@ -3,7 +3,7 @@ const mongoose = require('mongoose')
 const ruuviSchema = new mongoose.Schema({
   deviceId: String,
   eventId: String,
-  tags: [
+  tag: [
     {
       accelX: Number,
       accelY: Number,
@@ -14,7 +14,7 @@ const ruuviSchema = new mongoose.Schema({
       id: String,
       name: String,
       pressure: Number,
-      rawDataBlob: Buffer,
+      rawDataBlob: Array,
       rssi: Number,
       temperature: Number,
       updateAt: String,
