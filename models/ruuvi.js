@@ -1,5 +1,11 @@
 const mongoose = require('mongoose')
 
+const locationSchema = new mongoose.Schema({
+  accuracy: Number,
+  latitude: Number,
+  longitude: Number
+})
+
 const ruuviSchema = new mongoose.Schema({
   deviceId: String,
   eventId: String,
@@ -25,11 +31,7 @@ const ruuviSchema = new mongoose.Schema({
     }
   ],
   batterylevel: Number,
-  location: {
-    accuracy: Number,
-    latitude: Number,
-    longitude: Number
-  },
+  location: [locationSchema],
   time: String
 })
 
