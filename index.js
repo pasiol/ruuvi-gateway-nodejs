@@ -1,8 +1,8 @@
+const config = require('./utils/config')
 const app = require('./app')
 const fs = require('fs')
 const http = require('http')
 const https = require('https')
-const config = require('./utils/config')
 
 const args = process.argv.slice(2)
 console.log('Getting arguments ', args[0])
