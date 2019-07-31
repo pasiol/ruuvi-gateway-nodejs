@@ -10,7 +10,7 @@ You need the Ruuvitag device which sends temperature, humidity and pressure data
 
 For testing purposes, you can use test data.
 
-<https://github.com/pasiol/ruuvi-gateway-nodejs/requests>
+<https://github.com/pasiol/ruuvi-gateway-nodejs/tree/master/requests>
 
 ### Database
 
