@@ -1,14 +1,20 @@
 # ruuvi-gateway-nodejs
 
-Acting as a gateway between Ruuvitag and the MongoDB database. Data can send between the Ruuvitag and gateway with, for example, Ruuvi Station mobile app. ruuvi-gateway-nodejs stores data permanently to the MongoDB database.
+Acting as a gateway between Ruuvitag and the MongoDB database. Data can send between the Ruuvitag and gateway with Ruuvi Station mobile app. Service ruuvi-gateway-nodejs stores data permanently to the MongoDB database.
 
-Service allows only POST requests. It now showing stored data.
+Service allows only POST requests. It not showing stored data.
 
 ## Prerequisites
 
 You need the Ruuvitag device which sends temperature, humidity and pressure data to the connector. A connector can be some Bluetooth LE capable device such for example Rasberry pi, laptop or Android phone.  Connector sending the Ruuvitag data into gateway which acts Rest service for the connector. Gateway stores data permanently to the database.
 
-For testing purposes, you can use test data.
+You can buy Ruuvitag here: <https://ruuvi.com/>
+
+Ruuvi station app on Google Play store <https://play.google.com/store/apps/details?id=com.ruuvi.station&hl=en_US>
+
+Service working on the endpoint <http://localhost:8888/api/ruuvi>.
+
+If you don't have own Ruuvitag, here is link to test data.
 
 <https://github.com/pasiol/ruuvi-gateway-nodejs/tree/master/requests>
 
